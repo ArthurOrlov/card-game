@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  p,
+  h1 {
+    margin: 0px;
+  }
+
+  .play-body {
+    background: #006400;
+    font-family: sans-serif;
+  }
+  
+  .play-card__value {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin-bottom: -2.85%;
+  }
+  
+  .play-card:not(:nth-child(8n)) {
+    margin-right: 2.85%;
+  }
+  
+  .play-card {
+    position: relative;
+    width: calc(22%);
+    margin-bottom: 2.85%;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .play-card__value-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 160%;
+  }
+  
+  .play-card__value {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 32px;
+  }
+  
+  .play-card__close::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px;
+    background: url(../09_/img/side.jpg);
+  }
+  
+  .index-body {
+    padding: 0px 10px;
+    margin: 0px;
+    background-color: #006400;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .form__content {
+    padding-left: 20px;
+  }
+  
+  .form__label {
+    margin-bottom: 15px;
+  }
+  
+  .input--card-count {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    max-width: 165px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid;
+  }
+  
+  .form-submit {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    border: 1px solid;
+    cursor: pointer;
+  }
+
+  .finish-btn {
+    padding: 20px 40px;
+    margin-top: 50px;
+    background-color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    color: #006400;
+    border-radius: 10px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .play-card__close {
+
+  }
+
+  .play-card::after {
+    opacity: 1;
+  }
+
+  .play-card__open.play-card::after {
+    opacity: 0;
+  }
+
+  .play-card .play-card__value {
+    display: none;
+  }
+
+  .play-card__open.play-card .play-card__value {
+    display: block;
+  }
+
+  .play-card__open-finally .play-card__value {
+    display: block;
+  }
+
+  .play-card__open-finally::after {
+    opacity: 0;
+  }
